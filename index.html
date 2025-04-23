@@ -1,0 +1,31 @@
+<!DOCTYPE html>  
+<html lang="zh">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>转盘</title>  
+    <link rel="stylesheet" href="styles.css">  
+</head>  
+<body>  
+    <div class="box">  
+        <div class="main" ontransitionend="end()">  
+            <div id="temp" class="part" style="display: none;">  
+                <div class="bg"></div>  
+                <div class="title"></div>  
+            </div>  
+        </div>  
+        <div class="pointer">  
+            <div class="pointer-bar"></div>  
+            <div class="pointer-cursor"></div>  
+        </div>  
+    </div>  
+
+    <button onclick="start()">开始</button>  
+    <div class="winner"></div>  
+    
+    <h2>准备区</h2>  
+    <div id="readyArea" class="waiting-area"></div>  
+
+    <script src="script.js"></script>  
+</body>  
+</html>
